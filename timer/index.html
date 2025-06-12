@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="src/style.css">
+    <title>Timer</title>
+</head>
+<body>
+    <!-- Wrapper -->
+    <div id="wrapper" class="max-w-full m-5 h-screen flex flex-col justify-evenly items-center border shadow-xl">
+        <div id="message">
+            <p class="text-2xl animate-fade-in"></p>
+        </div>
+        <div id="chronometer" class="text-3xl">
+            <span id="hours" class="px-2">00</span>:<span id="minutes" class="px-2">00</span>:<span id="seconds" class="px-2">00</span>
+        </div>
+        <div id="buttons" class="flex place-content-center flex-wrap gap-5">
+            <button id="start-button" data-role="launch" class="bg-blue-500 text-xl text-white px-5 py-2 rounded-full cursor-pointer">Start</button>
+            <button id="pause-button" data-role="stop" class="bg-orange-500 text-xl text-white px-5 py-2 rounded-full cursor-pointer">Pause</button>
+            <button id="reset-button" data-role="reset" class="bg-red-500 text-xl text-white px-5 py-2 rounded-full cursor-pointer">Reset</button>
+        </div>
+    </div><!-- End Wrapper-->
+    <!-- Footer -->
+    <footer>
+        <p class="text-center">Built by Charles Faye (Bebouzo) - &copy;<span id="date"></span></p>
+    </footer><!-- End Footer -->
+    <!--Main JavaScript File-->
+    <script src="/js/main.js" type="module"></script>
+</body>
+</html>
